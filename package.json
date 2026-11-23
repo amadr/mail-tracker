@@ -4,8 +4,9 @@
   "private": true,
   "license": "AGPL-3.0",
   "scripts": {
-    "dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "wrangler": "XDG_CONFIG_HOME=$PWD/.wrangler-home wrangler",
+    "dev": "XDG_CONFIG_HOME=$PWD/.wrangler-home wrangler dev",
+    "deploy": "XDG_CONFIG_HOME=$PWD/.wrangler-home wrangler deploy"
   },
   "devDependencies": {
     "wrangler": "^4.72.0"
